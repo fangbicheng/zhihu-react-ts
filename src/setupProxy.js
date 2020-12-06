@@ -6,9 +6,6 @@ module.exports = function (app) {
     createProxyMiddleware({
       target: 'https://news-at.zhihu.com/api/4/news/latest',
       changeOrigin: true, // 设置跨域请求
-      PathRewrite: {
-        '^/api/4': '', // 将/api/4 变为 ''
-      },
     }),
   );
 };
