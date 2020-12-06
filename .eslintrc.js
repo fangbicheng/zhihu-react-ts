@@ -34,5 +34,7 @@ module.exports = {
     'import/extensions': 'off',
     '@typescript-eslint/no-use-before-define': ['error'],
     '@typescript-eslint/explicit-module-boundary-types': 'off',
+    '@typescript-eslint/no-var-requires': 'off',
+    'import/no-extraneous-dependencies': 'off',
   },
 };
