@@ -1,8 +1,8 @@
 // eslint-disable
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'amfe-flexible';
 import './index.css';
-// eslint-disable-next-line import/no-unresolved
 import List from 'pages/list';
 import reportWebVitals from './reportWebVitals';
 

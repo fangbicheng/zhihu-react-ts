@@ -1,6 +1,6 @@
 import React from 'react';
-// eslint-disable-next-line import/no-unresolved
 import { TopStory, Story, getStories } from 'services/list';
+import './index.css';
 
 interface State {
   topStories: TopStory[];
@@ -31,18 +31,16 @@ export default class List extends React.Component<any, State> {
 
     return (
       <div>
-        {topStories.map((item) => (
-          <div className="container" key={item.id}>
-            <div>{item.title}</div>
-            <img src={item.image} alt="" />
-          </div>
-        ))}
         {stories.map((item) => (
           <div className="container" key={item.id}>
-            <div>{item.title}</div>
-            <img src={item.images[0]} alt="" />
+            <div className="title-container">
+              <div className="title">{item.title}</div>
+              <div className="hint">{item.hint}</div>
+            </div>
+            <img className="image" src={item.images[0]} alt="" />
           </div>
         ))}
+        <div className="test" />
       </div>
     );
   }
