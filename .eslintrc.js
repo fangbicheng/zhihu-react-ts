@@ -37,5 +37,7 @@ module.exports = {
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-var-requires': 'off',
     'import/no-extraneous-dependencies': 'off',
+    'import/order': 'off',
+    'react/static-property-placement': 'off',
   },
 };

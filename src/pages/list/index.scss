@@ -1,0 +1,46 @@
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #5b7492;
+  opacity: 0.4;
+}
+.banner {
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  bottom: 20px;
+  white-space: normal;
+  &-title {
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  &-hint {
+    color: #ccc;
+    font-size: 30px;
+  }
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 20px;
+  .title-container {
+    margin-right: 20px;
+  }
+  .title {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .hint {
+    margin-top: 10px;
+    font-size: 24px;
+  }
+  .image {
+    width: 180px;
+    height: 180px;
+  }
+}
